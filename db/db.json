@@ -1,0 +1,44 @@
+{
+  "jedi": [
+    {
+      "id": 1,
+      "name": "Qui-Gon Jinn"
+    },
+    {
+      "id": 2,
+      "name": "Mace Windu"
+    },
+    {
+      "id": 3,
+      "name": "Aayla Secura"
+    },
+    {
+      "id": 4,
+      "name": "Yoda"
+    },
+    {
+      "id": 5,
+      "name": "Plo Koon"
+    },
+    {
+      "id": 6,
+      "name": "Luke Skywalker"
+    },
+    {
+      "id": 7,
+      "name": "Adi Gallia"
+    },
+    {
+      "id": 8,
+      "name": "Agen Kolar"
+    },
+    {
+      "id": 9,
+      "name": "Ki-Adi-Mundi"
+    },
+    {
+      "id": 10,
+      "name": "Quinlan Vos"
+    }
+  ]
+}
