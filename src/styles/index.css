@@ -1,5 +1,9 @@
+/*Avec plus de temps, j'aurai customisé un peu plus le front.*/
+
 /*=== IMPORT FILES ===*/
 @import url(App.css);
+@import url(NewJedi.css);
+@import url(ListJedi.css);
 
 /*=== FONT ===*/
 @import url('https://fonts.googleapis.com/css?family=Quicksand');

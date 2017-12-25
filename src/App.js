@@ -10,21 +10,21 @@ export default class App extends Component {
       this.loadJedi()
   }
 
-  //INITIALIZE STATE
+  //Initialisation des states
   state = {
       data: [],
       valueInput: '',
       errorMessage: ''
   }
 
-  //GET THE INPUT VALUE
+  //Récupère la valeur tapée dans l'input
   inputChange = (e) => {
       this.setState({
           valueInput: e.target.value
       })
   }
 
-  //CASE EMPTY INPUT
+  //Fonction qui va gérer le cas où l'input serait vide
   handleEmptySubmit = (e) => {
       e.preventDefault()
       this.setState({
@@ -32,7 +32,7 @@ export default class App extends Component {
       })
   }
 
-  //GET ALL JEDI FROM DB
+  //Récupère tous les jedis de la DB
   loadJedi = () => {
       axios.get('http://localhost:3009/jedi')
           .then(res => res.data)
@@ -44,7 +44,7 @@ export default class App extends Component {
           })
   }
 
-  //ADD A JEDI TO DB
+  //Ajoute un jedi dans la DB
   addJediToDb = (e) => {
       e.preventDefault()
       axios.post('http://localhost:3009/jedi', { id: this.state.data.index + 1, name: this.state.valueInput })
@@ -54,7 +54,7 @@ export default class App extends Component {
             })
   }
 
-  //DELETE A JEDI FROM DB
+  //Supprime un jedi de la DB
   deleteJediToDb = (jediId) => {
       axios.delete(`http://localhost:3009/jedi/${jediId}`)
           .then(() => this.loadJedi())

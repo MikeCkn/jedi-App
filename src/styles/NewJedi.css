@@ -1,0 +1,12 @@
+/*====Form NewJedi ====*/
+
+.inputAddJedi {
+    width: 50%;
+    margin-bottom: 3%;
+}
+
+/*=== Message error for empty input ===*/
+
+.error {
+    color: red;
+}
